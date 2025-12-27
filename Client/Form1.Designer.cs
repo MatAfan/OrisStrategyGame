@@ -168,7 +168,7 @@
             lblResources.Name = "lblResources";
             lblResources.Size = new Size(297, 694);
             lblResources.TabIndex = 3;
-            lblResources.Text = "Ресурсы:";
+            lblResources.Text = "Ресурсы:\r\n \U0001fab5\U0001faa8🌾\U0001fa93\U0001f9f1⛰️⚙️♨️💎🛡️⚔️\U0001fa99🏝️\U0001fa9f🍞🔧🏗️\U0001fa91";
             // 
             // lstBuildings
             // 

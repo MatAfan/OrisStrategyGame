@@ -14,16 +14,14 @@ public class Player
     
     public Dictionary<Resources, int> ResourceStorage = new();
     public List<Building> Buildings = [];
-    public int Soldiers = 0;
+    public int Soldiers = 1000;
     public int SoldiersCreatedThisTurn = 0;
     public HashSet<int> AttackedPlayersThisTurn = [];
 
     public void InitResources()
     {
-        ResourceStorage[Resources.Wood] = 10;
-        ResourceStorage[Resources.Stone] = 10;
-        ResourceStorage[Resources.Ore] = 5;
-        ResourceStorage[Resources.Wheat] = 8;
+        foreach (Resources res in Enum.GetValues<Resources>())
+            ResourceStorage[res] = 1;
     }
 
     public bool HasResource(Resources res, int amount)
